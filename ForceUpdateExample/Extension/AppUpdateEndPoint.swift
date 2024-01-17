@@ -57,5 +57,5 @@ enum Constants {
     static let forceUpdateMessage = "There are new features available, please update your app"
     static let updateBtnText = "Update Now"
     static let cancelBtnText = "Cancel"
-    static let learnMore = "Learn More"
+    static let learnMore = "Later"
 }

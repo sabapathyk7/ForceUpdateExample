@@ -55,7 +55,7 @@ struct AlertView: View {
                     primaryButton: .default(Text(Constants.updateBtnText), action: {
                 handleUpdate()
             }),
-                    secondaryButton: .cancel())
+                    secondaryButton: .default(Text(Constants.learnMore)))
         }
     }
 
