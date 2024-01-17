@@ -52,5 +52,10 @@ extension AppUpdateEndPoint: EndPoint {
 }
 
 enum Constants {
-  static let bundleID = ["bundleId": "com.apple.Pages"]
+    static let bundleID = ["bundleId": "com.apple.Pages"]
+    static let forceUpdateTitle = "New Version Available"
+    static let forceUpdateMessage = "There are new features available, please update your app"
+    static let updateBtnText = "Update Now"
+    static let cancelBtnText = "Cancel"
+    static let learnMore = "Learn More"
 }

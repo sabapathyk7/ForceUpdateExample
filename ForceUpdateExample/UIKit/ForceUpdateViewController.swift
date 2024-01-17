@@ -64,13 +64,13 @@ final class ForceUpdateViewController: UIViewController {
             print("App Upto Date")
         case .updateAvailable(let version, let storeURL, let releaseNotes):
             let alertController = UIAlertController(
-                title: forceUpdate ? "Force Update" : "Update \(version)",
-                message: forceUpdate ? "A new version is available. Update now?": releaseNotes,
+                title: forceUpdate ? Constants.forceUpdateTitle : "Update \(version)",
+                message: forceUpdate ? Constants.forceUpdateMessage: releaseNotes,
                 preferredStyle: .alert
             )
 
             alertController.addAction(UIAlertAction(
-                title: "Update",
+                title: Constants.updateBtnText,
                 style: .default,
                 handler: { _ in
                     self.handleUpdate(storeURL: storeURL)
@@ -79,7 +79,7 @@ final class ForceUpdateViewController: UIViewController {
 
             if !forceUpdate {
                 alertController.addAction(UIAlertAction(
-                    title: "Cancel",
+                    title: Constants.learnMore,
                     style: .cancel,
                     handler: nil
                 ))

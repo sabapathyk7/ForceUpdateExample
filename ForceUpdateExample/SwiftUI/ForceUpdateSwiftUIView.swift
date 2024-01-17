@@ -45,14 +45,14 @@ struct AlertView: View {
         .alert(isPresented: $showingAlert) {
             // Use a ternary operator to conditionally create the Alert
             return forceUpdate
-            ? Alert(title: Text("Force Update"),
-                    message: Text("A new version is available. Update now?"),
-                    dismissButton: .default(Text("Update"), action: {
+            ? Alert(title: Text(Constants.forceUpdateTitle),
+                    message: Text(Constants.forceUpdateMessage),
+                    dismissButton: .default(Text(Constants.updateBtnText), action: {
                 handleUpdate()
             }))
             : Alert(title: Text("Update \(version)"),
                     message: Text(releaseNotes),
-                    primaryButton: .default(Text("Update"), action: {
+                    primaryButton: .default(Text(Constants.updateBtnText), action: {
                 handleUpdate()
             }),
                     secondaryButton: .cancel())
