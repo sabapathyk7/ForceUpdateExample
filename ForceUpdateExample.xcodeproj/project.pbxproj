@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A21C99D12B56F19500CCA99F /* NetworkKit in Frameworks */ = {isa = PBXBuildFile; productRef = A21C99D02B56F19500CCA99F /* NetworkKit */; };
+		A21C99D42B56F22500CCA99F /* AppMetaDataResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21C99D32B56F22500CCA99F /* AppMetaDataResult.swift */; };
+		A21C99D82B56F9A300CCA99F /* ForceUpdateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21C99D72B56F9A300CCA99F /* ForceUpdateViewModel.swift */; };
+		A21C99DB2B56FA2A00CCA99F /* AppUpdateEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21C99DA2B56FA2A00CCA99F /* AppUpdateEndPoint.swift */; };
 		A253897C2B55648300F23187 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A253897B2B55648300F23187 /* AppDelegate.swift */; };
 		A253897E2B55648300F23187 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A253897D2B55648300F23187 /* SceneDelegate.swift */; };
 		A25389802B55648300F23187 /* ForceUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A253897F2B55648300F23187 /* ForceUpdateViewController.swift */; };
@@ -18,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A21C99D32B56F22500CCA99F /* AppMetaDataResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMetaDataResult.swift; sourceTree = "<group>"; };
+		A21C99D72B56F9A300CCA99F /* ForceUpdateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceUpdateViewModel.swift; sourceTree = "<group>"; };
+		A21C99DA2B56FA2A00CCA99F /* AppUpdateEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpdateEndPoint.swift; sourceTree = "<group>"; };
 		A25389782B55648300F23187 /* ForceUpdateExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForceUpdateExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A253897B2B55648300F23187 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A253897D2B55648300F23187 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,12 +42,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A21C99D12B56F19500CCA99F /* NetworkKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A21C99D22B56F1DE00CCA99F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A21C99D32B56F22500CCA99F /* AppMetaDataResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A21C99D52B56F98000CCA99F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A21C99D72B56F9A300CCA99F /* ForceUpdateViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A21C99D62B56F98800CCA99F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A253897B2B55648300F23187 /* AppDelegate.swift */,
+				A253897D2B55648300F23187 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A21C99D92B56FA1700CCA99F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A25389962B55687400F23187 /* UIView+Extension.swift */,
+				A21C99DA2B56FA2A00CCA99F /* AppUpdateEndPoint.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		A253896F2B55648300F23187 = {
 			isa = PBXGroup;
 			children = (
@@ -60,11 +102,12 @@
 		A253897A2B55648300F23187 /* ForceUpdateExample */ = {
 			isa = PBXGroup;
 			children = (
-				A253897B2B55648300F23187 /* AppDelegate.swift */,
-				A253897D2B55648300F23187 /* SceneDelegate.swift */,
+				A21C99D62B56F98800CCA99F /* App */,
+				A21C99D22B56F1DE00CCA99F /* Model */,
 				A25389992B5568E200F23187 /* UIKit */,
 				A25389982B5568C900F23187 /* SwiftUI */,
-				A25389962B55687400F23187 /* UIView+Extension.swift */,
+				A21C99D52B56F98000CCA99F /* ViewModel */,
+				A21C99D92B56FA1700CCA99F /* Extension */,
 				A25389842B55648500F23187 /* Assets.xcassets */,
 				A25389862B55648500F23187 /* LaunchScreen.storyboard */,
 				A25389892B55648500F23187 /* Info.plist */,
@@ -106,6 +149,9 @@
 			dependencies = (
 			);
 			name = ForceUpdateExample;
+			packageProductDependencies = (
+				A21C99D02B56F19500CCA99F /* NetworkKit */,
+			);
 			productName = ForceUpdateExample;
 			productReference = A25389782B55648300F23187 /* ForceUpdateExample.app */;
 			productType = "com.apple.product-type.application";
@@ -134,6 +180,9 @@
 				Base,
 			);
 			mainGroup = A253896F2B55648300F23187;
+			packageReferences = (
+				A21C99CF2B56F19500CCA99F /* XCRemoteSwiftPackageReference "NetworkKit" */,
+			);
 			productRefGroup = A25389792B55648300F23187 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -182,11 +231,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A21C99D42B56F22500CCA99F /* AppMetaDataResult.swift in Sources */,
 				A25389972B55687400F23187 /* UIView+Extension.swift in Sources */,
 				A25389932B5566E000F23187 /* HostingSwiftUIController.swift in Sources */,
+				A21C99DB2B56FA2A00CCA99F /* AppUpdateEndPoint.swift in Sources */,
 				A25389952B55671600F23187 /* ForceUpdateSwiftUIView.swift in Sources */,
 				A25389802B55648300F23187 /* ForceUpdateViewController.swift in Sources */,
 				A253897C2B55648300F23187 /* AppDelegate.swift in Sources */,
+				A21C99D82B56F9A300CCA99F /* ForceUpdateViewModel.swift in Sources */,
 				A253897E2B55648300F23187 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +454,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A21C99CF2B56F19500CCA99F /* XCRemoteSwiftPackageReference "NetworkKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sabapathyk7/NetworkKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A21C99D02B56F19500CCA99F /* NetworkKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A21C99CF2B56F19500CCA99F /* XCRemoteSwiftPackageReference "NetworkKit" */;
+			productName = NetworkKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A25389702B55648300F23187 /* Project object */;
 }
