@@ -1,4 +1,4 @@
-# Your Project Name
+# Force Update Example
 
 [![GitHub license](https://img.shields.io/github/license/sabapathyk7/ForceUpdateExample.svg)](https://github.com/sabapathyk7/ForceUpdateExample/blob/main/LICENSE)
 [![GitHub release](https://img.shields.io/github/v/release/sabapathyk7/ForceUpdateExample.svg)](https://github.com/sabapathyk7/ForceUpdateExample/releases)
@@ -6,7 +6,6 @@
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/sabapathyk7/ForceUpdateExample.svg)](https://github.com/sabapathyk7/ForceUpdateExample/pulls)
 [![Swift](https://img.shields.io/badge/swift-5.9-orange.svg)](https://swift.org)
 
-Brief description of your project.
 
 ## Table of Contents
 
