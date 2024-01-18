@@ -12,7 +12,7 @@ A Swift project demonstrating Force Update App Feature, integrated with NetworkK
 
 - [Features](#features)
 - [Requirements](#requirements)
-- [Documentation](#documentation)
+- [Screenshots](#screenshots)
 
 ## Features
 
@@ -24,11 +24,17 @@ A Swift project demonstrating Force Update App Feature, integrated with NetworkK
 
 - iOS 15.0+
 - Swift 5.0+
+- UIKit
 - NetworkKit Swift Package - https://github.com/sabapathyk7/NetworkKit.git
 
-## Documentation
+## Screenshots
 
-Check out my Medium article for a tutorial 
+<h1>Update App </h1>
+
+<img src= "https://github.com/sabapathyk7/ForceUpdateExample/assets/40764138/704fe8c9-e3e1-4a0e-9b43-8640498d190c" height = 550> 
+<img src= "https://github.com/sabapathyk7/ForceUpdateExample/assets/40764138/c4d08004-b73b-4ee2-b690-5b9164b73398" height = 550> 
+
+
 
 ## Connect with Me
 
