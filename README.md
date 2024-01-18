@@ -6,6 +6,7 @@
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/sabapathyk7/ForceUpdateExample.svg)](https://github.com/sabapathyk7/ForceUpdateExample/pulls)
 [![Swift](https://img.shields.io/badge/swift-5.9-orange.svg)](https://swift.org)
 
+A Swift project demonstrating Force Update App Feature, integrated with NetworkKit for API interactions.
 
 ## Table of Contents
 
